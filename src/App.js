@@ -109,9 +109,7 @@ class App extends Component {
             localStorage.setItem('tasks', JSON.stringify(tasks)); 
         }
     }
-
  
-
     onDelete = (id) => {
         var { tasks } = this.state;
         var index = this.findIndex(id); 
