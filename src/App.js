@@ -84,16 +84,16 @@ class App extends Component {
         console.log(data);
     }
 
-    //    findIndex = (id) => {
-    //     var { tasks } = this.state;
-    //     var result = -1;
-    //     tasks.forEach((task, index) => {
-    //         if(task.id === id) {
-    //             result = index;
-    //         }
-    //     });
-    //     return result;
-    // }
+       findIndex = (id) => {
+        var { tasks } = this.state;
+        var result = -1;
+        tasks.forEach((task, index) => {
+            if(task.id === id) {
+                result = index;
+            }
+        });
+        return result;
+    }
 
     onUpdateStatus = (id) => {
         var { tasks } = this.state;
